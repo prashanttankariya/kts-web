@@ -1,0 +1,20 @@
+color: #FFECCC;
+color: #722323;
+
+font-family: "Poppins", sans-serif;
+
+<i class="fa-solid fa-caret-down"></i>
+
+<i class="fa-solid fa-circle-arrow-left" id="left-arrow"></i>
+
+<i class="fa-solid fa-star"></i>
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-twitter"></i>
+
+<i class="fa-brands fa-instagram">
+
+<i class="fa-solid fa-envelope">
+
+<i class="fa-brands fa-linkedin-in">
