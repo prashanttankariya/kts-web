@@ -1,95 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KRUTI</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loadImages.css">
 
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="ktsweb.css">
 
     <!-- SEO Meta Tags -->
-    <title>Your Page Title</title>
-    <meta name="description" content="This is a short and clear description of your page. It helps search engines and appears in Google search.">
+    <title>Kruti Architecture</title>
+    <meta name="description"
+        content="This is a short and clear description of your page. It helps search engines and appears in Google search.">
     <meta name="keywords" content="HTML, CSS, beginner, tutorial, SEO, website">
     <meta name="author" content="Your Name">
 </head>
+
 <body>
     <section class="first_part">
-    <!-- ------------- NAVBAR ------------- -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio <i class="fa-solid fa-caret-down"></i></a></li>
-            <li><a href="#">Archive <i class="fa-solid fa-caret-down"></i></a></li>
-            <li><a href="#">Testimonials <i class="fa-solid fa-caret-down"></i></a></li>
-            <li><a href="#">Archivement / Publication</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">Carrer</a></li>
-        </ul>
-    </nav>
+        <!-- ------------- NAVBAR ------------- -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#portofolio">Portfolio <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#archive">Archive <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#testimonials">Testimonials <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#achievement">Achievement / Publication</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#career">Career</a></li>
+            </ul>
+        </nav>
 
-    <!-- ------------- HERO ------------- -->
+        <!-- ------------- HERO ------------- -->
     </section>
 
     <!-- ------------- HERO-TEXT ------------- -->
-     <div class="text-container">
+    <div class="text-container">
         <p class="hero-text-para">
-            Kruti_The Architectural Design Studio is a multidisciplinary design firm founded by Ar. Ashish Pandya in 2005. Since then, KTADS is dedicatedly & passionately working on various Architectural, Landscape, Interior & Furniture design projects that respects the needs and aspirations of end users and enhances the character of the space. Our design methodology is based on understanding of functional needs, form & spaces, climate & culture with integration of nature. As designers, we think beyond functional needs and spaces, we always look out for our design’s impact on environment, social fabric and “sensory experience”, which influences the lives of end users for generations. Here, at KTADS, design is not just a profession but it is a passion and love for us.
+            Kruti The Architectural Design Studio is a multidisciplinary design firm founded by Ar. Ashish Pandya in
+            2005. Since then, KTADS is dedicatedly & passionately working on various Architectural, Landscape, Interior
+            & Furniture design projects that respects the needs and aspirations of end users and enhances the character
+            of the space. Our design methodology is based on understanding of functional needs, form & spaces, climate &
+            culture with integration of nature. As designers, we think beyond functional needs and spaces, we always
+            look out for our design’s impact on environment, social fabric and “sensory experience”, which influences
+            the lives of end users for generations. Here, at KTADS, design is not just a profession but it is a passion
+            and love for us.
         </p>
-     </div>
+    </div>
 
     <!-- ------------- CARD ------------- -->
-    <div class="card-container">
-        <div class="card">
-            <h3>MODERN KITCHENS</h3>
-            <div class="card-img-container card-img-1"></div>
-
-        </div>        
-        <div class="card">
-            <h3>MODERN BATHROOM</h3>
-            <div class="card-img-container card-img-2"></div>
-
+    <div class="card">
+        <!-- Loop through all 27 clients -->
+        <div class="row">
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Manishbhai Sheth</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/Manishbhai Sheth/1.jpg"  loading="lazy" alt="img1">
+                    <img src="assets/clientImages/Manishbhai Sheth/2.jpg"  loading="lazy" alt="img1">
+                    <img src="assets/clientImages/Manishbhai Sheth/3.jpg"  loading="lazy" alt="img1">
+                    <img src="assets/clientImages/Manishbhai Sheth/4.jpg"  loading="lazy" alt="img1">
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Maheshbhai Patel</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/Maheshbhai Patel/1.jpg"loading="lazy" alt="image 2">
+                    <img src="assets/clientImages/Maheshbhai Patel/2.jpg"loading="lazy" alt="image 2">
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Udaisingh Tomar</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/Udaisingh Tomar/1.jpg" loading="lazy" alt="image 3">                    
+                    <img src="assets/clientImages/Udaisingh Tomar/2.jpg"loading="lazy" alt="image 3">
+                    <img src="assets/clientImages/Udaisingh Tomar/3.jpg"loading="lazy" alt="image 3">
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>DECORATIVE HARDWARE</h3>
-            <div class="card-img-container card-img-3"></div>
 
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Chandreshbhai Sharma</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/Chandershbhai Sharma/1.jpg" loading="lazy" alt="image 4">                    
+                    <img src="assets/clientImages/Chandershbhai Sharma/2.jpg" loading="lazy" alt="image 4">
+                    <img src="assets/clientImages/Chandershbhai Sharma/3.jpg" loading="lazy" alt="image 4">
+                    <img src="assets/clientImages/Chandershbhai Sharma/4.jpg" loading="lazy" alt="image 4">
+                    <img src="assets/clientImages/Chandershbhai Sharma/5.jpg" loading="lazy" alt="image 4">
+                    <img src="assets/clientImages/Chandershbhai Sharma/6.jpg" loading="lazy" alt="image 4">
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Dr. Deepakbhai Aghara</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/Dr. Deeppakbhai Aghara/1.jpg" loading="lazy" alt="image 5"> 
+                    <img src="assets/clientImages/Dr. Deeppakbhai Aghara/10.jpg" loading="lazy" alt="image 5"> 
+                    <img src="assets/clientImages/Dr. Deeppakbhai Aghara/11.jpg" loading="lazy" alt="image 5"> 
+                    <img src="assets/clientImages/Dr. Deeppakbhai Aghara/12.jpg" loading="lazy" alt="image 5"> 
+                    <img src="assets/clientImages/Dr. Deeppakbhai Aghara/13.jpg" loading="lazy" alt="image 5"> 
+                    <img src="assets/clientImages/Dr. Deeppakbhai Aghara/14.jpg" loading="lazy" alt="image 5"> 
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Kishore Singh Zala</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/KishoreSinghZala/1.JPG" loading="lazy" alt="image 6">                     
+                    <img src="assets/clientImages/KishoreSinghZala/2.JPG" loading="lazy" alt="image 6">                     
+                    <img src="assets/clientImages/KishoreSinghZala/3.JPG" loading="lazy" alt="image 6">                     
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>ROOMSPACES CABINETRY</h3>
-            <div class="card-img-container card-img-4"></div>
 
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Sanjaybhai Rajyani</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/SanjaybhaiRaiyani/1.JPG" loading="lazy" alt="image 6">           
+                    <img src="assets/clientImages/SanjaybhaiRaiyani/10.JPG" loading="lazy" alt="image 6">           
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Ashwinbhai Bharani</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/AshwinbhaiBharani/1.jpg" loading="lazy" alt="image 7">
+                    <img src="assets/clientImages/AshwinbhaiBharani/2.jpg" loading="lazy" alt="image 7">
+                    <img src="assets/clientImages/AshwinbhaiBharani/3.jpg" loading="lazy" alt="image 7">
+                    <img src="assets/clientImages/AshwinbhaiBharani/4.jpg" loading="lazy" alt="image 7">
+                    <img src="assets/clientImages/AshwinbhaiBharani/5.jpg" loading="lazy" alt="image 7">
+                    <img src="assets/clientImages/AshwinbhaiBharani/6.jpg" loading="lazy" alt="image 7">
+
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Eden Hill</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/EdenHill/1.jpg" loading="lazy" alt="image 7">
+                    <img src="assets/clientImages/EdenHill/10.jpg" loading="lazy" alt="image 7">
+                    <img src="assets/clientImages/EdenHill/11.jpg" loading="lazy" alt="image 7">
+                    <img src="assets/clientImages/EdenHill/12.jpg" loading="lazy" alt="image 7">
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>MODERN ROOMS</h3>
-            <div class="card-img-container card-img-5"></div>
 
+        <!-- Row 4 -->
+        <div class="row">
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Shiv Enclave</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/ShivEnclave/1.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/ShivEnclave/10.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/ShivEnclave/11.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/ShivEnclave/12.jpg" loading="lazy" alt="">
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Jivraj Sthapatya</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/JivrajSthapatya/1.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/JivrajSthapatya/10.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/JivrajSthapatya/10.jpg" loading="lazy" alt="">
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Paradise Height</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/ParadiseHeight/1.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/ParadiseHeight/10.JPG" loading="lazy" alt="">
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>MINIMAL OFFICES</h3>
-            <div class="card-img-container card-img-6"></div>
 
+        <!-- Row 5 -->
+        <div class="row">
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Watoro</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/Watero/10.jpeg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Watero/10.jpeg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Watero/11.jpeg" loading="lazy" alt="">
+                    
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Empire Square</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/EmpireSquare/1.tif" loading="lazy" alt="">
+                    <img src="assets/clientImages/EmpireSquare/2.tif" loading="lazy" alt="">
+                    <img src="assets/clientImages/EmpireSquare/3.tif" loading="lazy" alt="">
+                    <img src="assets/clientImages/EmpireSquare/4.tif" loading="lazy" alt="">
+                    
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Empire 36</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/Empire36/1.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Empire36/2.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Empire36/3.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Empire36/4.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Empire36/5.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Empire36/6.jpg" loading="lazy" alt="">
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>MODERN KITCHENS</h3>
-            <div class="card-img-container card-img-7"></div>
 
+        <!-- Row 6 -->
+        <div class="row">
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Suntouch</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/Suntouch/1.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Suntouch/10.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Suntouch/11.jpg" loading="lazy" alt="">
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Icon Graneto</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/IconGraneto/10.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/IconGraneto/11.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/IconGraneto/12.JPG" loading="lazy" alt="">
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Ncraze</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/Ncraze/1.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Ncraze/2.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Ncraze/3.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Ncraze/4.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Ncraze/5.jpg" loading="lazy" alt="">
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>WORKING PLACES</h3>
-            <div class="card-img-container card-img-8"></div>
 
+        <!-- Row 7 -->
+        <div class="row">
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Jewel_D Suite</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/Jewel_DSuite/1.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Jewel_DSuite/2.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/Jewel_DSuite/3.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/Jewel_DSuite/4.JPG" loading="lazy" alt="">
+                    
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Dates County</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <!-- <img src="assets/clientImages/DatesCounty/1.pdf" loading="lazy" alt=""> -->
+                    <!-- <img src="assets/clientImages/DatesCounty/2.pdf" loading="lazy" alt=""> -->
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Bell Stall - Bangalore</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/BellStall-Banglore/1.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellStall-Banglore/2.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellStall-Banglore/10.JPG" loading="lazy" alt="">
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>MODERN BEDROOMS</h3>
-            <div class="card-img-container card-img-9"></div>
 
+        <!-- Row 8 -->
+        <div class="row">
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Bell Display - Pune</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/BellDisplay-Pune/10.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellDisplay-Pune/11.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellDisplay-Pune/12.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellDisplay-Pune/13.JPG" loading="lazy" alt="">
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Bell Display - Udaipur</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/BellDisplay-Pune/17.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellDisplay-Pune/12.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellDisplay-Pune/14.JPG" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellDisplay-Pune/17.JPG" loading="lazy" alt="">
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Bell Display - Rajkot</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/BellDisplay-Pali_/1.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellDisplay-Pali_/2.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellDisplay-Pali_/3.jpg" loading="lazy" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 9 -->
+        <div class="row">
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Bell Display - Pali.</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/BellDisplay-Pali_/1.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellDisplay-Pali_/2.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/BellDisplay-Pali_/3.jpg" loading="lazy" alt="">
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Bell Display - Ahmedabad</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <!-- <img src="assets/clientImages/BellDisplay-Ahmednagar/Bell Ahmednagar 30-09-22 WA.mp4" loading="lazy" alt=""> -->
+                </div>
+            </div>
+            <div class="pt-card-body">
+                <h3 class="pt-card-title">Ishan Ceramic Zone</h3>
+                <div class="pt-card-img-box" onclick="openSlider(this)">
+                    <img src="assets/clientImages/IshanCeramicZone/10.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/IshanCeramicZone/2.jpg" loading="lazy" alt="">
+                    <img src="assets/clientImages/IshanCeramicZone/10.jpg" loading="lazy" alt="">
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- card and image section ends -->
+
+    <!-- card ends  -->
     <!-- ------------- ARCHIVES ------------- -->
 
     <div class="archivement-main-container">
@@ -97,7 +342,9 @@
         <div class="archivement-right-container">
             <h3>Archive</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ut quaerat modi animi, quos saepe natus officiis hic itaque vel optio cupiditate quibusdam? Ipsum, consequuntur debitis! Voluptatum consequatur necessitatibus veniam!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ut quaerat modi animi, quos saepe natus
+                officiis hic itaque vel optio cupiditate quibusdam? Ipsum, consequuntur debitis! Voluptatum consequatur
+                necessitatibus veniam!</p>
             <ul>
                 <li>Paragraph given in this</li>
                 <li>Paragraph given in this</li>
@@ -118,7 +365,9 @@
             <i class="fa-solid fa-circle-arrow-left" id="left-arrow"></i>
             <div class="testimonials-card-holder active">
                 <div class="testimonials-card">
-                    <div class="testimonials-img t-img-1" style="background-color: red; background-image: url(https://www.shareicon.net/data/256x256/2016/09/15/829472_man_512x512.png);"></div>
+                    <div class="testimonials-img t-img-1"
+                        style="background-color: red; background-image: url(https://www.shareicon.net/data/256x256/2016/09/15/829472_man_512x512.png);">
+                    </div>
                     <div class="testimonials-texts">
                         <h4>TESTIMONIALS</h4>
                         <p>"What would you tell someone considering our services."</p>
@@ -135,7 +384,9 @@
             </div>
             <div class="testimonials-card-holder active">
                 <div class="testimonials-card">
-                    <div class="testimonials-img t-img-2" style="background-color: green; background-image: url(https://www.shareicon.net/data/256x256/2016/09/15/829472_man_512x512.png);"></div>
+                    <div class="testimonials-img t-img-2"
+                        style="background-color: green; background-image: url(https://www.shareicon.net/data/256x256/2016/09/15/829472_man_512x512.png);">
+                    </div>
                     <div class="testimonials-texts">
                         <h4>TESTIMONIALS</h4>
                         <p>What would you tell someone considering our services.</p>
@@ -152,7 +403,9 @@
             </div>
             <div class="testimonials-card-holder active">
                 <div class="testimonials-card">
-                    <div class="testimonials-img t-img-3" style="background-color: orange; background-image: url(https://www.shareicon.net/data/256x256/2016/09/15/829472_man_512x512.png);"></div>
+                    <div class="testimonials-img t-img-3"
+                        style="background-color: orange; background-image: url(https://www.shareicon.net/data/256x256/2016/09/15/829472_man_512x512.png);">
+                    </div>
                     <div class="testimonials-texts">
                         <h4>TESTIMONIALS</h4>
                         <p>What would you tell someone considering our services.</p>
@@ -169,7 +422,9 @@
             </div>
             <div class="testimonials-card-holder active">
                 <div class="testimonials-card">
-                    <div class="testimonials-img t-img-4" style="background-color: blue; background-image: url(https://www.shareicon.net/data/256x256/2016/09/15/829472_man_512x512.png);"></div>
+                    <div class="testimonials-img t-img-4"
+                        style="background-color: blue; background-image: url(https://www.shareicon.net/data/256x256/2016/09/15/829472_man_512x512.png);">
+                    </div>
                     <div class="testimonials-texts">
                         <h4>TESTIMONIALS</h4>
                         <p>What would you tell someone considering our services.</p>
@@ -192,7 +447,8 @@
 
     <div class="achivement-container">
         <h4 class="achivement-heading">Achivement / Publication</h4>
-        <div class="achivement-para">Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.</div>
+        <div class="achivement-para">Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit
+            amet nisi erat.</div>
         <div class="achivement-img-container">
             <div class="achivement-img a-img-1"></div>
             <div class="achivement-img a-img-2"></div>
@@ -246,6 +502,32 @@
         </div>
     </div>
 
+
+    <!-- Modal HTML -->
+    <div id="imageModal">
+        <div id="modalContent">
+            <div class="modal-header">
+                <div id="modalClientTitle" class="modal-title">Client Name</div>
+                <span id="closeModal">&times;</span>
+            </div>
+            <div class="carousel"></div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.card-slider').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
     <script>
         // Get all testimonial cards
         const cards = document.querySelectorAll(".testimonials-card-holder");
@@ -255,35 +537,96 @@
         let currentIndex = 0;
 
         function showCard(index) {
-          cards.forEach((card, i) => {
-            card.classList.remove("active");
-            if (i === index) {
-              card.classList.add("active");
-            }
-          });
+            cards.forEach((card, i) => {
+                card.classList.remove("active");
+                if (i === index) {
+                    card.classList.add("active");
+                }
+            });
         }
 
         // Right button click
         rightBtn.addEventListener("click", () => {
-          currentIndex++;
-          if (currentIndex >= cards.length) {
-            currentIndex = 0; // Loop back to first
-          }
-          showCard(currentIndex);
+            currentIndex++;
+            if (currentIndex >= cards.length) {
+                currentIndex = 0; // Loop back to first
+            }
+            showCard(currentIndex);
         });
 
         // Left button click
         leftBtn.addEventListener("click", () => {
-          currentIndex--;
-          if (currentIndex < 0) {
-            currentIndex = cards.length - 1; // Loop to last
-          }
-          showCard(currentIndex);
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = cards.length - 1; // Loop to last
+            }
+            showCard(currentIndex);
         });
 
         // Show the first card initially
         showCard(currentIndex);
     </script>
 
+    <!-- <script src="loadImages.js"></script> -->
+    <!-- jQuery and Slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        function openSlider(container) {
+            const modal = document.getElementById('imageModal');
+            const carousel = document.querySelector('.carousel');
+            const title = container.closest('.pt-card-body').querySelector('.pt-card-title').textContent;
+
+            // Set title
+            document.getElementById('modalClientTitle').textContent = title;
+
+            // Clear existing slides
+            carousel.innerHTML = '';
+
+            // Add new images
+            const images = container.querySelectorAll('img');
+            images.forEach(img => {
+                const slide = document.createElement('div');
+                slide.appendChild(img.cloneNode());
+                carousel.appendChild(slide);
+            });
+
+            // Show modal
+            modal.style.display = 'flex';
+            document.body.classList.add('modal-open');
+
+            // Init slick
+            $(carousel).slick({
+                dots: true,
+                arrows: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true
+            });
+        }
+
+        document.getElementById('closeModal').onclick = function () {
+            closeModal();
+        };
+
+        window.onclick = function (e) {
+            if (e.target === document.getElementById('imageModal')) {
+                closeModal();
+            }
+        };
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            const carousel = document.querySelector('.carousel');
+            modal.style.display = 'none';
+            document.body.classList.remove('modal-open');
+            if ($(carousel).hasClass('slick-initialized')) {
+                $(carousel).slick('unslick');
+            }
+        }
+    </script>
 </body>
+
 </html>
